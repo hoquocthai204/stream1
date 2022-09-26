@@ -32,16 +32,16 @@ const AddChannel: React.FunctionComponent<AddChannelProps> = ({ handleBack, hand
           {/* <ChannelItem logo={<TwitchLogo />} name={'Twitch'} /> */}
           <OAuth2Login
             // authorizationUrl="https://id.twitch.tv/oauth2/authorize?response_type=code&client_id=rk0qllr0498x2byb2twcy3u1mnubb3&redirect_uri=http://localhost:8000/oauth_twitch&force_verify=true&scope=channel:read:stream_key&user:edit:broadcast&state=,1"
-            authorizationUrl="https://id.twitch.tv/oauth2/authorize"
-            responseType="code"
-            clientId="rk0qllr0498x2byb2twcy3u1mnubb3"
-            redirectUri="http://localhost:8000/oauth_twitch&force_verify=true"
-            scope={'channel:read:stream_key'}
-            // authorizationUrl="https://accounts.google.com/o/oauth2/v2/auth"
-            // responseType="token"
-            // clientId="31486186654-gqqtlra1bdjf50mp3m1rjm9ekpglegir.apps.googleusercontent.com"
-            // redirectUri="https://62dsg.csb.app"
-            // scope="openid email profile"
+            // authorizationUrl="https://id.twitch.tv/oauth2/authorize"
+            // responseType="code"
+            // clientId="rk0qllr0498x2byb2twcy3u1mnubb3"
+            // redirectUri="http://localhost:8000/oauth_twitch&force_verify=true"
+            // scope={'channel:read:stream_key'}
+            authorizationUrl="https://accounts.google.com/o/oauth2/v2/auth"
+            responseType="token"
+            clientId="31486186654-gqqtlra1bdjf50mp3m1rjm9ekpglegir.apps.googleusercontent.com"
+            redirectUri="https://62dsg.csb.app"
+            scope="openid email profile"
             onSuccess={onSuccess}
             onFailure={onFailure}
             isCrossOrigin={true}
